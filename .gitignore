@@ -1,0 +1,55 @@
+# Bytecode-filer
+*.class
+
+# Loggfiler
+*.log
+
+# Byggmappar
+/bin/
+/build/
+/out/
+target/
+
+# Maven
+.mvn/
+pom.xml.tag
+pom.xml.releaseBackup
+pom.xml.versionsBackup
+pom.xml.next
+release.properties
+
+# Gradle
+.gradle/
+build/
+!gradle/wrapper/gradle-wrapper.jar
+
+# Gradle-loggar och cache
+gradle-app.setting
+gradle.log
+
+# IntelliJ IDEA
+.idea/
+*.iml
+*.ipr
+*.iws
+out/
+
+# Eclipse
+.project
+.classpath
+.settings/
+.metadata/
+
+# NetBeans
+/nbproject/private/
+/nbbuild/
+/dist/
+/nbdist/
+/.nbm/
+
+# VS Code
+.vscode/
+
+# OS-specifika filer
+.DS_Store
+Thumbs.db
