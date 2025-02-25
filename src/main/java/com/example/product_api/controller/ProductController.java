@@ -32,16 +32,14 @@ public class ProductController {
        
         Optional<ProductType> productType = productTypeService.getProductTypeById(product.getProductType().getId());
         
-    
-
         List<Colour> colours = colourService.getColoursByIds(
                 product.getColours().stream().map(Colour::getId).toList()
         );
 
+        colours.forEach(colour -> System.out.print(colour.getName()));
         
-        
-        product.setProductType(productType.get());
-        product.setColours(colours);
+        product.setProductType(product.getProductType());
+        product.setColours(product.getColours());
         Product savedProduct = productService.addProduct(product);
        
         return ResponseEntity.ok(savedProduct);
